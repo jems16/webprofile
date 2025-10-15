@@ -164,20 +164,21 @@
   <section class="py-20 bg-gray-50 dark:bg-gray-800 text-center" id="contact">
     <h2 class="text-3xl sm:text-4xl font-bold mb-10">Let’s <span class="text-blue-600">Collaborate</span></h2>
 
-    <form name="contact" method="POST" data-netlify="true"
-          class="max-w-lg mx-auto flex flex-col space-y-4 bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg">
-      <input type="hidden" name="form-name" value="contact" />
-      <input type="text" name="name" placeholder="Your Name" required
-             class="p-3 border border-gray-300 dark:border-gray-700 rounded-md" />
-      <input type="email" name="email" placeholder="Your Email" required
-             class="p-3 border border-gray-300 dark:border-gray-700 rounded-md" />
-      <textarea name="message" placeholder="Describe your project: website, SEO, landing page, etc." required
-                class="p-3 border border-gray-300 dark:border-gray-700 rounded-md h-32"></textarea>
-      <button type="submit"
-              class="bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition">
-        Send Project Inquiry
-      </button>
-    </form>
+<form name="contact" method="POST" data-netlify="true" action="/thankyou.html"
+      class="max-w-lg mx-auto flex flex-col space-y-4 bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg">
+  <input type="hidden" name="form-name" value="contact" />
+  <input type="text" name="name" placeholder="Your Name" required
+         class="p-3 border border-gray-300 dark:border-gray-700 rounded-md" />
+  <input type="email" name="email" placeholder="Your Email" required
+         class="p-3 border border-gray-300 dark:border-gray-700 rounded-md" />
+  <textarea name="message" placeholder="Describe your project: website, SEO, landing page, etc." required
+            class="p-3 border border-gray-300 dark:border-gray-700 rounded-md h-32"></textarea>
+  <button type="submit"
+          class="bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition">
+    Send Project Inquiry
+  </button>
+</form>
+
   </section>
 
 </main>
@@ -232,6 +233,11 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.animate-slide-up, .fade-in, .project-card, .float-hover').forEach(el => observer.observe(el));
 </script>
+<form name="contact" netlify hidden>
+  <input type="text" name="name">
+  <input type="email" name="email">
+  <textarea name="message"></textarea>
+</form>
 
 </body>
 </html>
