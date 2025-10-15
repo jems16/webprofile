@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jemrin Simatupang - Software Engineer Fullstack Developer</title>
+  <meta name="description" content="Profil Jemrin Simatupang, Software Engineer Fullstack dengan pengalaman membangun aplikasi .NET, React, dan Angular. Membangun aplikasi web modern dan responsif.">
+  <meta name="robots" content="index, follow" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:url" content="https://jemrin.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jemrin Simatupang - Software Engineer Fullstack Developer">
+  <meta property="og:description" content="Profil Jemrin Simatupang, Software Engineer Fullstack dengan pengalaman membangun aplikasi .NET, React, dan Angular. Membangun aplikasi web modern dan responsif.">
+  <meta property="og:image" content="jemrin.netlify.app/images/jemsfoto.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="jemrin.netlify.app">
+  <meta property="twitter:url" content="https://jemrin.netlify.app/">
+  <meta name="twitter:title" content="Jemrin Simatupang - Software Engineer Fullstack Developer">
+  <meta name="twitter:description" content="Profil Jemrin Simatupang, Software Engineer Fullstack dengan pengalaman membangun aplikasi .NET, React, dan Angular. Membangun aplikasi web modern dan responsif.">
+  <meta name="twitter:image" content="jemrin.netlify.app/images/jemsfoto.jpg">
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jemrin Simatupang",
+    "url": "https://jemrin.netlify.app/",
+    "image": "https://jemrin.netlify.app/images/jemsfoto.jpg",
+    "jobTitle": "Software Engineer / Fullstack Developer",
+    "sameAs": [
+      "www.linkedin.com/in/jemrin-s-3b9865233",
+      "https://github.com/jems16"
+    ],
+    "description": "Software Engineer Fullstack dengan pengalaman membangun aplikasi menggunakan .NET, React, dan Angular."
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class' }</script>
+
+  <style>
+    /* Animasi Gradient Background */
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .hero-bg {
+      background: linear-gradient(-45deg, #06b6d4, #3b82f6, #6366f1, #8b5cf6);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+    .float-hover { transition: transform 0.6s ease; }
+    .float-hover:hover { transform: translateY(-10px) scale(1.05); }
+    .lang-toggle { cursor: pointer; padding: 0.25rem 0.5rem; border-radius: 4px; }
+    .lang-toggle.active { background-color: #3B82F6; color: white; }
+    .animate-slide-up { opacity:0; transform:translateY(20px); transition: all 0.6s ease-out; }
+    .fade-in { opacity:0; transform:translateX(50px); transition: all 0.6s ease-out; }
+  </style>
+</head>
+<body class="bg-blue-50 text-gray-900 dark:bg-gray-900 dark:text-white">
+
+<!-- Floating WA & Email -->
+<div class="fixed bottom-6 right-6 flex flex-col space-y-4 z-50">
+  <a href="https://wa.me/6282116644628" target="_blank" class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center fade-in delay-100" aria-label="WhatsApp Jemrin">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="w-6 h-6" alt="WhatsApp Icon" loading="lazy" />
+  </a>
+  <a href="mailto:jemrinsimatupang16@gmail.com" class="bg-blue-500 hover:bg-blue-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center fade-in delay-200" aria-label="Email Jemrin">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="w-6 h-6" alt="Email Icon" loading="lazy" />
+  </a>
+</div>
+
+<header class="bg-gradient-to-r from-blue-400 to-blue-600 text-white py-4 sticky top-0 z-50 shadow-lg">
+  <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
+    <a href="index.html" class="text-lg sm:text-2xl font-bold hover:opacity-80">Jemrin Simatupang</a>
+    <button id="menu-toggle" class="md:hidden focus:outline-none text-2xl" aria-label="Toggle Menu">☰</button>
+    <nav id="menu" class="hidden md:flex flex-col md:flex-row md:items-center w-full md:w-auto menu-mobile" role="navigation" aria-label="Primary Navigation">
+      <div class="flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0 w-full md:w-auto">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="flex flex-row space-x-2 mt-4 md:mt-0 md:ml-4">
+        <span class="lang-toggle active" id="lang-en" role="button" tabindex="0" aria-pressed="true">EN</span>
+        <span class="lang-toggle" id="lang-id" role="button" tabindex="0" aria-pressed="false">ID</span>
+        <button id="darkModeToggle" class="bg-white text-blue-600 px-2 py-1 rounded dark:bg-gray-700 dark:text-yellow-300" aria-label="Toggle Dark Mode">🌙</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero Section (Jasa Freelancer) -->
+  <section class="hero-bg text-white relative overflow-hidden flex flex-col justify-center items-center min-h-screen px-6 text-center">
+    <img src="images/jemsfoto.jpg" alt="Jemrin Simatupang - Web Developer & SEO Specialist"
+         class="rounded-full w-36 sm:w-48 h-36 sm:h-48 border-4 border-white shadow-lg float-hover mb-6" loading="lazy" />
+    <h1 class="text-3xl sm:text-5xl font-bold animate-slide-up">Web That Ranks.<br>Pages That Convert.</h1>
+    <p class="text-base sm:text-xl mt-3 max-w-2xl animate-slide-up delay-100">
+      Hi, I’m <strong>Jemrin Simatupang</strong> — Web Developer & SEO Specialist
+      building fast, beautiful, and high-performing websites for global clients.
+    </p>
+
+    <div class="flex justify-center space-x-6 mt-6 animate-slide-up delay-200">
+      <a href="https://github.com/jems16" target="_blank" class="underline hover:text-blue-200">GitHub</a>
+      <a href="https://linkedin.com/in/jemrin-s-3b9865233" target="_blank" class="underline hover:text-blue-200">LinkedIn</a>
+    </div>
+
+    <a href="https://calendly.com/jemrinsimatupang16/30min" target="_blank"
+       class="mt-8 bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-blue-100 transition">
+      📅 Book a Free Call
+    </a>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-20 bg-white dark:bg-gray-900 text-center">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-12">
+      My <span class="text-blue-600">Services</span>
+    </h2>
+
+    <div class="grid gap-8 sm:grid-cols-2 max-w-5xl mx-auto px-6">
+      <div class="p-6 bg-blue-50 dark:bg-gray-800 rounded-2xl shadow-md hover:-translate-y-2 transition-all">
+        <h3 class="text-xl font-semibold mb-2">🚀 Web App & Landing Page</h3>
+        <p>High-converting, mobile-optimized landing pages that turn visitors into customers.</p>
+      </div>
+      <div class="p-6 bg-blue-50 dark:bg-gray-800 rounded-2xl shadow-md hover:-translate-y-2 transition-all">
+        <h3 class="text-xl font-semibold mb-2">🔍 SEO Optimization</h3>
+        <p>Technical SEO, on-page optimization, and content strategy to rank #1 on Google.</p>
+      </div>
+      <div class="p-6 bg-blue-50 dark:bg-gray-800 rounded-2xl shadow-md hover:-translate-y-2 transition-all">
+        <h3 class="text-xl font-semibold mb-2">💻 Web Development</h3>
+        <p>Custom web apps with .NET Core, PHP (Laravel), Golang, React, and modern stacks.</p>
+      </div>
+      <div class="p-6 bg-blue-50 dark:bg-gray-800 rounded-2xl shadow-md hover:-translate-y-2 transition-all">
+        <h3 class="text-xl font-semibold mb-2">⚡ Performance Audit</h3>
+        <p>Core Web Vitals optimization, speed boost, and Lighthouse score improvement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="text-center py-16 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-4">Ready to Grow Your Online Presence?</h2>
+    <p class="text-lg mb-6">Let’s build a website that ranks on Google and converts visitors into paying customers.</p>
+    <a href="https://calendly.com/jemrinsimatupang16/30min" target="_blank"
+       class="bg-white text-blue-700 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-blue-100 transition">
+      📅 Schedule a Free Consultation
+    </a>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="py-20 bg-gray-50 dark:bg-gray-800 text-center" id="contact">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-10">Let’s <span class="text-blue-600">Collaborate</span></h2>
+
+    <form name="contact" method="POST" data-netlify="true"
+          class="max-w-lg mx-auto flex flex-col space-y-4 bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg">
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" name="name" placeholder="Your Name" required
+             class="p-3 border border-gray-300 dark:border-gray-700 rounded-md" />
+      <input type="email" name="email" placeholder="Your Email" required
+             class="p-3 border border-gray-300 dark:border-gray-700 rounded-md" />
+      <textarea name="message" placeholder="Describe your project: website, SEO, landing page, etc." required
+                class="p-3 border border-gray-300 dark:border-gray-700 rounded-md h-32"></textarea>
+      <button type="submit"
+              class="bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition">
+        Send Project Inquiry
+      </button>
+    </form>
+  </section>
+
+</main>
+
+
+<footer class="bg-blue-400 text-white text-center py-4">
+  <p>© 2025 Jemrin Simatupang. All rights reserved.</p>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+  menuToggle.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+  document.querySelectorAll('nav a.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth < 768) menu.classList.add('hidden');
+    });
+  });
+
+  const langEN = document.getElementById('lang-en');
+  const langID = document.getElementById('lang-id');
+  const translatable = document.querySelectorAll('[data-en]');
+  function setLang(lang) {
+    translatable.forEach(el => el.textContent = el.getAttribute(`data-${lang}`) || el.textContent);
+    if (lang === 'en') {
+      langEN.classList.add('active');
+      langID.classList.remove('active');
+      langEN.setAttribute('aria-pressed', 'true');
+      langID.setAttribute('aria-pressed', 'false');
+    } else {
+      langID.classList.add('active');
+      langEN.classList.remove('active');
+      langID.setAttribute('aria-pressed', 'true');
+      langEN.setAttribute('aria-pressed', 'false');
+    }
+  }
+  langEN.addEventListener('click', () => setLang('en'));
+  langID.addEventListener('click', () => setLang('id'));
+  setLang('en');
+
+  document.getElementById('darkModeToggle').addEventListener('click', () => document.documentElement.classList.toggle('dark'));
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0) scale(1)';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.animate-slide-up, .fade-in, .project-card, .float-hover').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
