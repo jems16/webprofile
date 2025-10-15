@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jemrin.netlify.app/sitemap.xml
