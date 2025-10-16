@@ -1,39 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Homepage -->
   <url>
-    <loc>https://jemrin.netlify.app/</loc>
-    <priority>1.0</priority>
+    <loc>https://ziateam.online/</loc>
+    <changefreq>daily</changefreq> 
+    <priority>1.0</priority>     
   </url>
 
+  <!-- About -->
   <url>
-    <loc>https://jemrin.netlify.app/about</loc>
+    <loc>https://ziateam.online/about.html</loc>
+    <changefreq>monthly</changefreq> 
+    <priority>0.9</priority>         
+  </url>
+
+  <!-- Experience -->
+  <url>
+    <loc>https://ziateam.online/experience.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>         
+  </url>
+
+  <!-- Education -->
+  <url>
+    <loc>https://ziateam.online/education.html</loc>
+    <changefreq>yearly</changefreq>  
+    <priority>0.8</priority>        
+  </url>
+
+  <!-- Skills -->
+  <url>
+    <loc>https://ziateam.online/skills.html</loc>
+    <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
-    <url>
-        <loc>https://jemrin.netlify.app/experience</loc>
-        <priority>0.8</priority>
-    </url>
+  <!-- Project -->
+  <url>
+    <loc>https://ziateam.online/project.html</loc>
+    <changefreq>weekly</changefreq>  
+    <priority>0.95</priority>        
+  </url>
 
-    <url>
-        <loc>https://jemrin.netlify.app/education</loc>
-        <priority>0.8</priority>
-    </url>
+  <!-- Contact -->
+  <url>
+    <loc>https://ziateam.online/contact.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>         
+  </url>
 
-    <url>
-        <loc>https://jemrin.netlify.app/skills</loc>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://jemrin.netlify.app/projects</loc>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://jemrin.netlify.app/contact</loc>
-        <priority>0.8</priority>
-    </url>
 </urlset>

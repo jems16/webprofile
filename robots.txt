@@ -1,4 +1,6 @@
+# Allow all search engines to crawl the website
 User-agent: *
 Allow: /
 
-Sitemap: https://jemrin.netlify.app/sitemap.xml
+# Sitemap location
+Sitemap: https://ziateam.online/sitemap.xml
